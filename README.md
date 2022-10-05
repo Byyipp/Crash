@@ -1,6 +1,6 @@
 # Crash!
 
-Inspired by the gambling game named "Crash", now built and run on the blockchain fully automated.
+Inspired by the gambling game named "Crash", now built and ran on the blockchain fully automated.
 
 Successfully deployed and tested on the [Goerli Testnet](https://goerli.etherscan.io/address/0xed17124c88e554f1ca34a4099988586891e012e7
 ).
