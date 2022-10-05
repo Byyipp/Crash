@@ -1,4 +1,4 @@
-#Crash!
+# Crash!
 
 Inspired by the gambling game named "Crash", now built and run on the blockchain fully automated.
 
@@ -8,45 +8,45 @@ Successfully deployed and tested on the [Goerli Testnet](https://goerli.ethersca
 
 
 
-##Requirements
+## Requirements
 - [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [Nodejs](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com/getting-started/install)
 - [Hardhat](https://hardhat.org/hardhat-runner)
 
-##Installation
+## Installation
 ```
-git clone https://github.com/
-cd 
+git clone https://github.com/xBossBoyx/Crash
+cd Crash
 yarn
 ```
 
 
-##Usage
-###Deploying
+## Usage
+### Deploying
 ```
 yarn hardhat deploy
 ```
 
-###Deploying on Testnet
+### Deploying on Testnet
 ```
 yarn hardhat deploy --network goerli
 ```
 
-###Testing
+### Testing
 ```
 yarn hardhat test
 ```
 
-###Test Coverage
+### Test Coverage
 ```
 yarn hardhat coverage
 ```
 
-##Environment Variables
+## Environment Variables
 You must set up your own `GOERLI_RPC_URL` and `PRIVATE_KEY` as environment variables.  Add to your `.env` file.  
 
-##Chainlink VRF & Automation
+## Chainlink VRF & Automation
 [Chainlink VRF](https://vrf.chain.link/)
 
 You must get a subscriptionId in order for the contract to receive random numbers.
@@ -57,12 +57,13 @@ This is used to automatically monitor and update the state of the game.
 
 Use `Time-based` automation and use these settings:
 ![img.png](img.png)
+
 The target function must be `performUpkeep`
 
 **Fund with LINK**
 
-##Gas cost estimation
+## Gas cost estimation
 To get gas estimation, you need `COINMARKETCAP_API_KEY` environment variable from [CoinMarketCap](https://pro.coinmarketcap.com/signup)
 
-##Etherscan auto-verification
+## Etherscan auto-verification
 The contract can be verified automatically once deployed if you have an [API Key](https://etherscan.io/myapikey) from Etherscan.  Save the key as an environment variable named `ETHERSCAN_API_KEY`.
